@@ -57,13 +57,6 @@ public class PlayerController : MonoBehaviour
         {
             _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-
-        if (Input.GetButtonDown("Fire1") && _isGrounded == true && _isAttacking == false)
-        {
-            _movement = Vector2.zero;
-            _rigidbody.velocity = Vector2.zero;
-            _animator.SetTrigger("Attack");
-        }
     }
 
     void FixedUpdate()
@@ -81,19 +74,9 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("IsGrounded", _isGrounded);
         _animator.SetFloat("VerticalVelocity", _rigidbody.velocity.y);
 
-        if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-        {
-            _isAttacking = true;
-        }
-        else
-        {
-            _isAttacking = false;
-        }
-
-        if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
             _longIdleTimer += Time.deltaTime;
-
             if (_longIdleTimer >= longIdleTime)
             {
                 _animator.SetTrigger("LongIdle");
