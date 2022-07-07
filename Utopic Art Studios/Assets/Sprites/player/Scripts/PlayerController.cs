@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (_isAttacking == false)
-        {
+        { 
             float horizontalInput = Input.GetAxisRaw("Horizontal");
             _movement = new Vector2(horizontalInput, 0f);
 
