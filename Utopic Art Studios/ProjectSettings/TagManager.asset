@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - Cliff
   - 
   - 
   - 
@@ -61,4 +61,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 4209380565
+    locked: 0
+  - name: Camera UI
+    uniqueID: 927059279
     locked: 0
