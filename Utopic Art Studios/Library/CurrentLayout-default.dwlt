@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -118,10 +118,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 145
+  controlID: 131
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,10 +143,10 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 731
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 146
+  controlID: 132
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,10 +168,10 @@ MonoBehaviour:
     y: 0
     width: 1122
     height: 731
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 71
+  controlID: 52
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,10 +193,10 @@ MonoBehaviour:
     y: 0
     width: 1122
     height: 446
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 72
+  controlID: 53
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 212
     height: 446
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: 19}
   - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
+  m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 1920, y: 1080}
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_Stats: 0
   m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
@@ -377,15 +377,15 @@ MonoBehaviour:
       width: 908
       height: 404
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 454, y: 201.99994}
+    m_Translation: {x: 462.96732, y: 203.08064}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -454
-      y: -201.99994
+      x: -462.96732
+      y: -203.08064
       width: 908
       height: 404
     m_MinimalGUI: 1
@@ -424,9 +424,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 66eb0000
-      m_LastClickedID: 60262
-      m_ExpandedIDs: 065effff205effffc091ffffd891fffffc92ffff68c5ffff8cd2ffffa4d2ffffcad3ffff02d8ffff1ad8ffff40d9ffff00e0ffff18e0ffff3ee1ffff08e8ffff20e8ffff26e8ffffa0e8ffffb8e8ffffdee9ffff9cebffffb6ebffffc4ebffffa2ecffffbaecffffc0ecffff58edffff70edffff76edffff0eeeffff26eeffff2ceeffffbeeeffffd6eeffffdceeffff0af1ffff22f1ffff28f1ffffa0f1ffffb8f1ffffbef1ffff5ef2ffff76f2ffff7cf2ffffaef3ffffc6f3ffffccf3ffff0cf4ffff24f4ffff2af4ffffacf4ffff1cf5ffff56f5ffff6ef5ffff74f5ffffbef5ffffd8f5ffffe6f5fffffef6ffff18f7ffff22f7ffffb8f7ffffd0f7ffff0af9ffff60fbffff346f0000926f000050720000ae720000a075000090780000f07b00004e7c0000d07e00002e7f0000b08100000e82000084870000e2870000528b0000b08b0000328e0000908e0000ae8e0000b2940000bc9400001a950000969b00009e9b0000dc9b0000ec9b0000069c000022a0000034a0000060a0000092a00000b6a00000b2cc0000d0cc0000e0cc0000eacc000020cd000028cd000038cd000052cd0000
+      m_SelectedIDs: 248e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: bad3ffff0a8d0000248d0000448d0000648d00006c8d0000708d0000728d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -477,8 +477,8 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
-  m_OverrideSceneCullingMask: 6917529027641081856
+  m_Gizmos: 0
+  m_OverrideSceneCullingMask: 4611686018427387905
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
@@ -486,9 +486,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.788888, y: 5.351884, z: -15.998882}
+    m_Target: {x: 993.40533, y: 510.14902, z: -47.834053}
     speed: 2
-    m_Value: {x: 12.788888, y: 5.351884, z: -15.998882}
+    m_Value: {x: 998.88354, y: 521.5337, z: -45.93594}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -539,9 +539,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.586155
+    m_Target: 503.52795
     speed: 2
-    m_Value: 10.586155
+    m_Value: 527.2544
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -667,23 +667,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scenes/Menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scenes/Menu
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Adrian\Documents\Videogame Master Files\UAS\Mexico\Utopic
     Art Studios
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44480000
-    m_LastClickedID: 18500
-    m_ExpandedIDs: 0000000036480000384800003a4800003c4800003e480000404800004248000044480000464800006a4800006e48000066510000e252000000ca9a3b
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: 248e0000
+    m_LastClickedID: 36388
+    m_ExpandedIDs: 00000000f44b0000f64b0000f84b0000fa4b0000fc4b0000fe4b0000004c0000024c0000044c0000204c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,7 +711,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000036480000384800003a4800003c4800003e48000040480000424800004448000046480000
+    m_ExpandedIDs: 00000000f44b0000f64b0000f84b0000fa4b0000fc4b0000fe4b0000004c0000024c0000044c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
