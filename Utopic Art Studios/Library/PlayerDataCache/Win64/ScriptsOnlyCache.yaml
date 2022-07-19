@@ -1,24 +1,23 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - InGameMenu
-    - PlayerController
-    Cinemachine.dll:
-    - Cinemachine.CinemachineBrain
-    - Cinemachine.CinemachineFramingTransposer
-    - Cinemachine.CinemachinePipeline
-    - Cinemachine.CinemachineVirtualCamera
+    - audioController
+    - difcultadController
+    - getSaved
+    - levelController
+    - menuPrincipal
+    - panelBrillo
+    - resetConfigData
+    - saveChanges
+    - sonidoController
+    - tmpSlider
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     - UnityEditor.U2D.IK.IKGizmos
-    Unity.2D.SpriteShape.Runtime.dll:
-    - UnityEngine.U2D.SpriteShape
-    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -34,11 +33,10 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GroupBrush
     - UnityEditor.Tilemaps.LineBrush
     - UnityEditor.Tilemaps.RandomBrush
-    Unity.2D.Tilemap.Extras.dll:
-    - UnityEngine.RuleTile
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
@@ -56,13 +54,20 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
   sceneClasses:
-    Assets/Scenes/Chapters/2/2.unity:
+    Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -77,17 +82,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 62
-      Script: {instanceID: 0}
-    - Class: 66
-      Script: {instanceID: 0}
-    - Class: 70
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -96,47 +97,63 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 654}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1782}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2346}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 3064}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 3260}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 3262}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3898}
     - Class: 114
-      Script: {instanceID: 3656}
+      Script: {instanceID: 4470}
     - Class: 114
-      Script: {instanceID: 3676}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4978}
     - Class: 114
-      Script: {instanceID: 4236}
+      Script: {instanceID: 5002}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 5160}
     - Class: 114
-      Script: {instanceID: 5162}
+      Script: {instanceID: 5586}
     - Class: 114
-      Script: {instanceID: 5588}
+      Script: {instanceID: 19750}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 19752}
+    - Class: 114
+      Script: {instanceID: 19756}
+    - Class: 114
+      Script: {instanceID: 19760}
+    - Class: 114
+      Script: {instanceID: 19762}
+    - Class: 114
+      Script: {instanceID: 19764}
+    - Class: 114
+      Script: {instanceID: 19766}
+    - Class: 114
+      Script: {instanceID: 19770}
+    - Class: 114
+      Script: {instanceID: 19778}
+    - Class: 114
+      Script: {instanceID: 19786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -145,8 +162,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -154,18 +169,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 19719996
-      Script: {instanceID: 0}
-    - Class: 156049354
-      Script: {instanceID: 0}
-    - Class: 483693784
-      Script: {instanceID: 0}
-    - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1032,8 +1035,128 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: ce4a538d1e8e988976431b6abcfbc076
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: panelBrillo
+  - hash:
+      serializedVersion: 2
+      Hash: 7bd985d6c561c484f3a705ff3abf7a86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: sonidoController
+  - hash:
+      serializedVersion: 2
+      Hash: ecf365b7f412e8e4483f14adda6c896c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: brillo
+  - hash:
+      serializedVersion: 2
+      Hash: 8c35ee5a10bee2ac3959f62596479794
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: getSaved
+  - hash:
+      serializedVersion: 2
+      Hash: a967f3244950f9be15c9ca0cb70d919e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPatrol
+  - hash:
+      serializedVersion: 2
+      Hash: 64dfff5d090fc3ccd4de889cce7892a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: levelController
+  - hash:
+      serializedVersion: 2
+      Hash: 08bb6242af3b309003fd5ee7fa3f1c6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: saveChanges
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: difcultadController
+  - hash:
+      serializedVersion: 2
+      Hash: d892e14e2e4e9f4923e217699465b06a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: audioController
+  - hash:
+      serializedVersion: 2
+      Hash: 4dba252ae000063a286ed04dd3640779
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadScene
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: menuPrincipal
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColliderDetector
+  - hash:
+      serializedVersion: 2
+      Hash: ae74d9ffa63b46142ecb042ffc8c1f24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiatePrefab
+  - hash:
+      serializedVersion: 2
+      Hash: bf188205853924742dc2dfe74a1989d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: configValues
+  - hash:
+      serializedVersion: 2
+      Hash: 614ecdcb244e5a17993ffd67a39e861c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tmpSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: volveraMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 81c318d4529327e0ca4e76b7b2077168
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerDetector
+  - hash:
+      serializedVersion: 2
+      Hash: 230f43931654ac1e31d7dd487053eacb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: resetConfigData
+  - hash:
+      serializedVersion: 2
+      Hash: 7df5f120cdd9f04a828616648bb2cb23
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Weapon
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Chapters/2/2.unity
+  - Assets/Scenes/Menu.unity
   playerPath: C:/Users/Adrian/Documents/Videogame Master Files/Ejecutable/Utopic
     Art Studios.exe
