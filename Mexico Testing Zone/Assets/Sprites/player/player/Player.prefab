@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7433540519636051068}
   m_Layer: 0
   m_Name: Sprite Renderer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,8 +177,9 @@ MonoBehaviour:
   cliffLayer:
     serializedVersion: 2
     m_Bits: 512
+  textMeshPro: {fileID: 0}
   groundCheckRadius: 0
-  time: 10
+  time: 1000
 --- !u!95 &7433540519636051068
 Animator:
   serializedVersion: 3

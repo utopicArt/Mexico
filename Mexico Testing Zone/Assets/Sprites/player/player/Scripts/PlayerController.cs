@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -12,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public LayerMask cliffLayer;
-    public float groundCheckRadius;
+    public TextMeshProUGUI textMeshPro;
+    public float groundCheckRadius = 0.05f;
     public float time;
     private float _time;
 
@@ -120,6 +122,10 @@ public class PlayerController : MonoBehaviour
     {
         time -= Time.deltaTime; // El valor sera negativo dado que hay un tiempo de espera
                                 // para que finalice la animacion
+        if (time > 0)
+        {
+            textMeshPro.text = "Tiempo restante: " + Mathf.Round(time).ToString() + " segundos";
+        }
         if (time <= 0)
         {
             _animator.SetBool("time0ut", true);
@@ -140,6 +146,14 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Cliff"))
         {
             _playerFell = true;
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Cliff"))
+        {
+            GameObject message = GameObject.Find("Board Container");
+            if (message != null)
+            {
+
+            }
         }
     }
 
