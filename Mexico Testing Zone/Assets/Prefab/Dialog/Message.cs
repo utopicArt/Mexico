@@ -7,9 +7,10 @@ public class Message : MonoBehaviour
 {
     public TextMeshProUGUI dialogTMP;
     public GameObject messageContainer;
-    public float velocidadEscritura = 0.08f;
+    public float velocidadEscritura = 0.06f;
     public float velocidadCambio = 1f;
     public List<string> textElements = new List<string>();
+    public bool endPoint = false;
 
     private void Awake()
     {
@@ -69,6 +70,11 @@ public class Message : MonoBehaviour
                 yield return new WaitForSeconds(velocidadEscritura);//Espera entre mostrar caracteres
             }
             yield return new WaitForSeconds(velocidadCambio); //Espera entre mensajes
+        }
+        if (endPoint)
+        {
+            yield return new WaitForSeconds(3f); //Espera para finalizar el nivel
+            Debug.Log("Salir al menu principal");
         }
     }
 }
