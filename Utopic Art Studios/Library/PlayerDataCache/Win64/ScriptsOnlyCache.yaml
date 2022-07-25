@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - InGameMenu
     - audioController
     - difcultadController
     - getSaved
@@ -97,63 +98,63 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 1558}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 1796}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 2346}
+      Script: {instanceID: 2116}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2354}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 3654}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3898}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 4470}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 3278}
     - Class: 114
-      Script: {instanceID: 4978}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 5002}
+      Script: {instanceID: 3548}
     - Class: 114
-      Script: {instanceID: 5160}
+      Script: {instanceID: 3560}
     - Class: 114
-      Script: {instanceID: 5586}
+      Script: {instanceID: 3574}
     - Class: 114
-      Script: {instanceID: 19750}
+      Script: {instanceID: 3680}
     - Class: 114
-      Script: {instanceID: 19752}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 19756}
+      Script: {instanceID: 3928}
     - Class: 114
-      Script: {instanceID: 19760}
+      Script: {instanceID: 4502}
     - Class: 114
-      Script: {instanceID: 19762}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 19764}
+      Script: {instanceID: 5012}
     - Class: 114
-      Script: {instanceID: 19766}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 19770}
+      Script: {instanceID: 5180}
     - Class: 114
-      Script: {instanceID: 19778}
+      Script: {instanceID: 5196}
     - Class: 114
-      Script: {instanceID: 19786}
+      Script: {instanceID: 5624}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,6 +300,12 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
+      Hash: 614ecdcb244e5a17993ffd67a39e861c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tmpSlider
+  - hash:
+      serializedVersion: 2
       Hash: 6225eb0973ab0af667bc5f9d1b1b18de
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -309,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineDollyCart
+  - hash:
+      serializedVersion: 2
+      Hash: 7bd985d6c561c484f3a705ff3abf7a86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: sonidoController
   - hash:
       serializedVersion: 2
       Hash: bd50beb95120324d8c4e8386692b6e82
@@ -377,6 +390,12 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
+      Hash: 64dfff5d090fc3ccd4de889cce7892a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: levelController
+  - hash:
+      serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -401,10 +420,22 @@ ScriptsOnlyBuild:
     className: CinemachineSameAsFollowTarget
   - hash:
       serializedVersion: 2
+      Hash: d892e14e2e4e9f4923e217699465b06a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: audioController
+  - hash:
+      serializedVersion: 2
       Hash: 1fb7f217514a42364dd941af7804813c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: ce4a538d1e8e988976431b6abcfbc076
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: panelBrillo
   - hash:
       serializedVersion: 2
       Hash: c8f1a224e0a43adc56c91864de822dd3
@@ -455,6 +486,18 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 08bb6242af3b309003fd5ee7fa3f1c6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: saveChanges
+  - hash:
+      serializedVersion: 2
+      Hash: bf188205853924742dc2dfe74a1989d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: configValues
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -485,10 +528,22 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColliderDetector
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: difcultadController
   - hash:
       serializedVersion: 2
       Hash: a306e12d896ddcca949923c805691027
@@ -533,6 +588,12 @@ ScriptsOnlyBuild:
     className: Cinemachine3rdPersonFollow
   - hash:
       serializedVersion: 2
+      Hash: ecf365b7f412e8e4483f14adda6c896c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: brillo
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -549,6 +610,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 8c35ee5a10bee2ac3959f62596479794
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: getSaved
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -587,6 +654,12 @@ ScriptsOnlyBuild:
     className: CinemachineImpulseListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: menuPrincipal
+  - hash:
+      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -609,6 +682,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerDetector
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -657,6 +736,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ae74d9ffa63b46142ecb042ffc8c1f24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiatePrefab
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -797,6 +882,12 @@ ScriptsOnlyBuild:
     className: CinemachineTrackedDolly
   - hash:
       serializedVersion: 2
+      Hash: a967f3244950f9be15c9ca0cb70d919e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPatrol
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -881,6 +972,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 230f43931654ac1e31d7dd487053eacb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: resetConfigData
+  - hash:
+      serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -915,6 +1012,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
     className: SpriteLibraryAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4dba252ae000063a286ed04dd3640779
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadScene
   - hash:
       serializedVersion: 2
       Hash: 56df1fa7cea034df9863fe5a24200a32
@@ -957,6 +1060,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 81c318d4529327e0ca4e76b7b2077168
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
   - hash:
       serializedVersion: 2
       Hash: 37de53a49708b087da4050fc1ca7a6ee
@@ -1037,94 +1146,10 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: ce4a538d1e8e988976431b6abcfbc076
+      Hash: 7df5f120cdd9f04a828616648bb2cb23
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: panelBrillo
-  - hash:
-      serializedVersion: 2
-      Hash: 7bd985d6c561c484f3a705ff3abf7a86
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: sonidoController
-  - hash:
-      serializedVersion: 2
-      Hash: ecf365b7f412e8e4483f14adda6c896c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: brillo
-  - hash:
-      serializedVersion: 2
-      Hash: 8c35ee5a10bee2ac3959f62596479794
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: getSaved
-  - hash:
-      serializedVersion: 2
-      Hash: a967f3244950f9be15c9ca0cb70d919e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyPatrol
-  - hash:
-      serializedVersion: 2
-      Hash: 64dfff5d090fc3ccd4de889cce7892a0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: levelController
-  - hash:
-      serializedVersion: 2
-      Hash: 08bb6242af3b309003fd5ee7fa3f1c6e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: saveChanges
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: difcultadController
-  - hash:
-      serializedVersion: 2
-      Hash: d892e14e2e4e9f4923e217699465b06a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: audioController
-  - hash:
-      serializedVersion: 2
-      Hash: 4dba252ae000063a286ed04dd3640779
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadScene
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: menuPrincipal
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColliderDetector
-  - hash:
-      serializedVersion: 2
-      Hash: ae74d9ffa63b46142ecb042ffc8c1f24
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InstantiatePrefab
-  - hash:
-      serializedVersion: 2
-      Hash: bf188205853924742dc2dfe74a1989d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: configValues
-  - hash:
-      serializedVersion: 2
-      Hash: 614ecdcb244e5a17993ffd67a39e861c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: tmpSlider
+    className: Weapon
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1133,28 +1158,10 @@ ScriptsOnlyBuild:
     className: volveraMenu
   - hash:
       serializedVersion: 2
-      Hash: 81c318d4529327e0ca4e76b7b2077168
+      Hash: f3f3e5a34df0dde7aed0dd9243e34164
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Bullet
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TriggerDetector
-  - hash:
-      serializedVersion: 2
-      Hash: 230f43931654ac1e31d7dd487053eacb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: resetConfigData
-  - hash:
-      serializedVersion: 2
-      Hash: 7df5f120cdd9f04a828616648bb2cb23
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Weapon
+    className: Message
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

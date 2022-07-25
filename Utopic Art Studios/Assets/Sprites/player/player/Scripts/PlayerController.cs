@@ -147,6 +147,14 @@ public class PlayerController : MonoBehaviour
         {
             _playerFell = true;
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Cliff"))
+        {
+            GameObject message = GameObject.Find("Board Container");
+            if (message != null)
+            {
+
+            }
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
