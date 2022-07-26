@@ -65,6 +65,7 @@
     <Compile Include="Assets\Sprites\player\player\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Menu\Settings\panelBrillo.cs" />
     <Compile Include="Assets\Scripts\Menu\Settings\saveChanges.cs" />
+    <Compile Include="Assets\Prefab\Dialog\Message.cs" />
     <Compile Include="Assets\Scripts\Menu\Settings\configValues.cs" />
     <Compile Include="Assets\Scripts\Game\Colliders\ColliderDetector.cs" />
     <Compile Include="Assets\Scripts\Menu\Levels\difcultadController.cs" />
@@ -80,7 +81,6 @@
     <Compile Include="Assets\Prefab\Menu\Script\InGameMenu.cs" />
     <Compile Include="Assets\Scripts\Game\Weapon.cs" />
     <Compile Include="Assets\Scripts\Menu\Levels\volveraMenu.cs" />
-    <Compile Include="Assets\Prefab\Dialog\Message.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

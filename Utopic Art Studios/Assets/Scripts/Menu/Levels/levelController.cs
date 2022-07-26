@@ -30,6 +30,7 @@ public class levelController : MonoBehaviour
         c = levels[level - 1].GetComponent<Image>().color;
         c.a = 0.29f;
         levels[level - 1].GetComponent<Image>().color = c;
+        PlayerPrefs.SetInt("level", level);
     }
 
     public void goBack()
@@ -41,10 +42,17 @@ public class levelController : MonoBehaviour
     {
         int dificultad = PlayerPrefs.GetInt("difficulty", 2);
         if (gameLevel > 0){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else{
             message.SetActive(true);
         }
+    }
+
+    public void loadLevel()
+    {
+        int level = PlayerPrefs.GetInt("level", 1);
+        int introductionLevel = PlayerPrefs.GetInt("intro", 0);
+        SceneManager.LoadScene((introductionLevel==0?6: level));
     }
 }
